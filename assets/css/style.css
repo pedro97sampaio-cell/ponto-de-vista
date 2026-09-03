@@ -135,16 +135,17 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
   position:absolute;inset:0;
   background:linear-gradient(180deg,rgba(43,42,40,.44) 0%,rgba(43,42,40,0) 26%,rgba(43,42,40,.1) 46%,rgba(43,42,40,.88) 100%);
 }
-.hero__body{position:relative;z-index:2;padding:0 var(--rail) clamp(4.5rem,12vh,7.5rem);max-width:34ch}
+.hero__body{position:relative;z-index:2;padding:0 var(--rail) clamp(4.5rem,12vh,7.5rem);width:min(100%,60rem)}
 .hero h1{
   font-family:var(--serif);font-weight:300;
-  font-size:clamp(2.4rem,5.6vw,5.4rem);line-height:1.06;letter-spacing:.01em;
+  font-size:clamp(2.1rem,5.2vw,5rem);line-height:1.08;letter-spacing:.01em;
+  max-width:15ch;
   text-shadow:0 2px 40px rgba(43,42,40,.5);
 }
 .hero h1 em{font-style:italic;color:var(--sand)}
 .hero__sub{
   margin-top:1.6rem;font-size:var(--cap);letter-spacing:.18em;text-transform:uppercase;
-  color:var(--ink-2);line-height:2;
+  color:var(--ink-2);line-height:2;max-width:52ch;
 }
 .hero__cue{
   position:absolute;z-index:2;right:var(--rail);bottom:clamp(4.5rem,12vh,7.5rem);
