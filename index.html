@@ -56,26 +56,21 @@
 
 <!-- ───────────────────── HERO — o mesmo instante, duas alturas ───────────────────── -->
 <section class="hero" aria-labelledby="hero-title">
+  <figure class="hero__shot">
+    <video class="hero__media" autoplay muted loop playsinline preload="none"
+           poster="https://images.unsplash.com/photo-1550784718-990c6de52adf?auto=format&fit=crop&w=1400&q=76">
+      <source src="assets/media/reel.mp4" type="video/mp4">
+    </video>
+  </figure>
 
-  <div class="hero__split">
-    <figure class="pane pane--ground">
-      <video class="pane__media" autoplay muted loop playsinline preload="none"
-             poster="https://images.unsplash.com/photo-1550784718-990c6de52adf?auto=format&fit=crop&w=1400&q=76">
-        <source src="assets/media/reel.mp4" type="video/mp4">
-      </video>
-      <figcaption><b>0 m</b> Nível dos olhos</figcaption>
-    </figure>
-
-    <figure class="pane pane--air">
-      <img class="pane__media"
-           src="https://images.unsplash.com/photo-1758612120966-b20c01160c7b?auto=format&fit=crop&w=1100&q=76"
-           alt="A mesma quinta vista de cima, por drone" width="1100" height="1400" decoding="async" fetchpriority="high">
-      <figcaption><b>120 m</b> Vertical, drone</figcaption>
-    </figure>
-  </div>
-
-  <div class="hero__type">
-    <h1 id="hero-title">O mesmo <em>instante</em><br>duas alturas</h1>
+  <div class="hero__panel">
+    <h1 id="hero-title">
+      <span class="up">O mesmo</span>
+      <em>instante</em>
+      <span class="up">duas</span>
+      <em>alturas</em>
+    </h1>
+    <p class="hero__sub">Fotografia e vídeo, câmara e drone.<br>Casamentos, batizados, comunhões e empresas.</p>
   </div>
 </section>
 

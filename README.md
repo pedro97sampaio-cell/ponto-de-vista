@@ -38,8 +38,9 @@ display a 80–120px (não 200), e muito mais ar do que instinto nos diz.
 
 ### As decisões que importam
 
-1. **O herói é a tese.** Dois enquadramentos reais separados por um filete — terra à esquerda,
-   aéreo à direita, com `0 m` / `120 m` a ancorar cada painel. O título atravessa a divisão.
+1. **O herói.** Fotografia à esquerda, painel escuro à direita com o lettering — a estrutura
+   da referência. A cadência vem da alternância entre romana em caixa-alta e itálico: as linhas
+   em itálico são menores, recuadas e em areia. Em mobile empilha (foto 50svh, painel por baixo).
 2. **A troca de ponto de vista.** As peças marcadas `120 m` fazem crossfade para a aérea do mesmo
    momento no hover (`.fr__air`, CSS puro). Silenciosa: sem caixa, sem badge, sem timecode.
 3. **Números que são informação.** `0 m` / `120 m`, não `01 / 02`. Nos Serviços não há numeração —
@@ -53,7 +54,10 @@ display a 80–120px (não 200), e muito mais ar do que instinto nos diz.
 ### Duas armadilhas já corrigidas — não reintroduzir
 
 - **`text-transform: uppercase` come as unidades.** Dava `0 M`, `120 M`, `12 H`. Qualquer elemento
-  que carregue uma unidade SI leva `text-transform:none` explícito.
+  que carregue uma unidade SI não pode herdar `uppercase`. Já reapareceu uma vez, quando o `<b>`
+  que tinha a exceção foi removido numa simplificação — verificar depois de mexer nessas linhas.
+- **A nav sobre fotografia clara.** A marca desaparecia contra o céu do herói. Tem um scrim em
+  `.nav::before`, que se apaga quando a barra ganha fundo sólido. Não remover.
 - **`backdrop-filter` por elemento repetido congela o renderer.** Estava em cada badge da grelha.
   Ficou só no `.nav`.
 
