@@ -162,11 +162,10 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
    A DUPLA
    ============================================================ */
 .duo{padding:var(--band) var(--rail) clamp(4rem,9vh,7rem)}
-.duo__head{max-width:52ch;margin:0 auto clamp(4rem,9vh,6.5rem);text-align:center}
+.duo__head{max-width:52ch;margin:0 0 clamp(4rem,9vh,6.5rem)}
 .duo__head .dsp{margin-bottom:1.8rem}
-.duo__head .lede{margin-inline:auto}
 
-.duo__grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2rem,5vw,5.5rem);align-items:start;max-width:1180px;margin-inline:auto}
+.duo__grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2rem,5vw,5.5rem);align-items:start}
 .op{position:relative}
 .op--low{margin-top:clamp(2rem,7vw,6rem)}
 .op__alt{
@@ -183,7 +182,7 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
    TRABALHO
    ============================================================ */
 .work{padding:clamp(4rem,9vh,7rem) var(--rail) var(--band)}
-.work__head{margin-bottom:clamp(2.5rem,5vh,3.5rem);text-align:center}
+.work__head{margin-bottom:clamp(2.5rem,5vh,3.5rem)}
 .work__bar{
   display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:1.2rem 2rem;
   padding-bottom:1.5rem;margin-bottom:clamp(2rem,4.5vh,3rem);border-bottom:1px solid var(--line);
@@ -253,11 +252,11 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
    SERVIÇOS — a inversão
    ============================================================ */
 .svc{background:var(--paper);color:var(--on-paper);padding:var(--band) var(--rail)}
-.svc__head{max-width:52ch;margin:0 auto clamp(3.5rem,7vh,5rem);text-align:center}
+.svc__head{max-width:52ch;margin:0 0 clamp(3.5rem,7vh,5rem)}
 .svc__head .dsp{margin-bottom:1.4rem}
-.svc__head .lede{color:var(--on-paper-2);margin-inline:auto}
+.svc__head .lede{color:var(--on-paper-2)}
 
-.svc__rows{max-width:1000px;margin-inline:auto;border-top:1px solid var(--line-paper)}
+.svc__rows{border-top:1px solid var(--line-paper)}
 .svc__row{
   display:grid;grid-template-columns:minmax(10rem,1fr) minmax(0,2.2fr) auto;
   gap:.9rem clamp(1.5rem,4vw,4rem);align-items:baseline;
