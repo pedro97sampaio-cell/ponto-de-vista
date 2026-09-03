@@ -68,15 +68,22 @@ para se ver a olho sem ter de ler este ficheiro:
 
 | Marca | Onde | Significa |
 |---|---|---|
-| `.ph` — sublinhado tracejado | prazos, durações, "responder hoje" | valor de exemplo, por confirmar |
+| `.ph` — sublinhado tracejado | prazos, durações, "responder hoje", nomes das peças | valor de exemplo, por confirmar |
 | `.ph-tag` — etiqueta `exemplo` | cada testemunho | o texto não é de um cliente real |
-| `.ph-note` — nota com filete | Testemunhos e Serviços | explica o que naquela secção é exemplo |
+| `.ph-note` — nota com filete | Trabalho, Testemunhos e Serviços | explica o que naquela secção é exemplo |
+
+O único conteúdo inventado que **não** está marcado na página é o email e o telefone. O
+`+351 900 000 000` é obviamente falso; o `hello@pontodevista.pt` não é, e deve ser trocado antes
+de alguém tentar escrever para lá.
 
 Ao substituir por conteúdo verdadeiro, **tirar a marca** — senão a convenção deixa de valer
 alguma coisa. Quando não sobrar nenhuma, tirar também o `<meta name="robots" content="noindex">`.
 
-Cuidado: `.says figcaption span` pinta a linha do local a areia e já apanhou a etiqueta uma vez,
-deixando texto areia sobre fundo areia. Está excluída com `:not(.ph-tag)`.
+Duas armadilhas desta convenção, já corrigidas:
+- `.says figcaption span` pinta a linha do local a areia e apanhou a etiqueta, deixando texto
+  areia sobre fundo areia. Excluída com `:not(.ph-tag)`.
+- O `.ph` num elemento `display:block` desenha o tracejado à largura da caixa, não do texto.
+  Por isso `.tile .t` é `inline-block` — o `.m` a seguir já é `block` e quebra a linha na mesma.
 
 ## Substituir por conteúdo real
 
