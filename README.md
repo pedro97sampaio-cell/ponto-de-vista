@@ -61,6 +61,23 @@ display a 80–120px (não 200), e muito mais ar do que instinto nos diz.
 - **`backdrop-filter` por elemento repetido congela o renderer.** Estava em cada badge da grelha.
   Ficou só no `.nav`.
 
+## Convenção de conteúdo de exemplo
+
+Tudo o que foi inventado e ainda não foi confirmado está assinalado **na própria página**,
+para se ver a olho sem ter de ler este ficheiro:
+
+| Marca | Onde | Significa |
+|---|---|---|
+| `.ph` — sublinhado tracejado | prazos, durações, "responder hoje" | valor de exemplo, por confirmar |
+| `.ph-tag` — etiqueta `exemplo` | cada testemunho | o texto não é de um cliente real |
+| `.ph-note` — nota com filete | Testemunhos e Serviços | explica o que naquela secção é exemplo |
+
+Ao substituir por conteúdo verdadeiro, **tirar a marca** — senão a convenção deixa de valer
+alguma coisa. Quando não sobrar nenhuma, tirar também o `<meta name="robots" content="noindex">`.
+
+Cuidado: `.says figcaption span` pinta a linha do local a areia e já apanhou a etiqueta uma vez,
+deixando texto areia sobre fundo areia. Está excluída com `:not(.ph-tag)`.
+
 ## Substituir por conteúdo real
 
 ### Imagens

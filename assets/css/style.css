@@ -81,6 +81,26 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
 .fr>img:first-of-type{transition:transform 1.6s var(--ease)}
 .fr--45{aspect-ratio:4/5}
 
+/* ── conteúdo de exemplo ──────────────────────────────────────
+   Convenção única para tudo o que foi inventado e ainda não foi
+   confirmado. Tem de se ver a olho, sem ler o README.          */
+.ph{
+  border-bottom:1px dashed var(--sand);
+  padding-bottom:.06em;cursor:help;
+}
+.svc .ph{border-bottom-color:rgba(43,42,40,.5)}
+.ph-note{
+  font-size:var(--cap);letter-spacing:.1em;line-height:1.9;
+  color:var(--sand);max-width:64ch;
+  border-left:1px solid var(--sand);padding-left:1rem;
+}
+.ph-tag{
+  /* dentro de um flex em coluna o inline-block estica: tem de se alinhar ao início */
+  align-self:flex-start;margin-bottom:.55rem;padding:.16rem .5rem;
+  font-size:.625rem;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--ground);background:var(--sand);
+}
+
 /* ============================================================
    NAV — marca ao centro, caps pequenas espacejadas
    ============================================================ */
@@ -250,6 +270,7 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
 .svc__head{max-width:52ch;margin:0 0 clamp(3.5rem,7vh,5rem)}
 .svc__head .dsp{margin-bottom:1.4rem}
 .svc__head .lede{color:var(--on-paper-2)}
+.svc .ph-note{margin-top:1.6rem;color:rgba(43,42,40,.72);border-left-color:rgba(43,42,40,.5)}
 
 .svc__rows{border-top:1px solid var(--line-paper)}
 .svc__row{
@@ -266,6 +287,7 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
    Um só testemunho gigante e centrado é o tique do template.
    ============================================================ */
 .says{padding:var(--band) var(--rail)}
+.says .ph-note{margin-bottom:clamp(2.5rem,6vh,4rem)}
 .says__row{
   display:grid;grid-template-columns:repeat(3,1fr);
   border-top:1px solid var(--line);
@@ -286,7 +308,7 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
   font-size:var(--cap);letter-spacing:.2em;text-transform:uppercase;color:var(--ink-3);
   display:flex;flex-direction:column;gap:.25rem;
 }
-.says figcaption span{color:var(--sand)}
+.says figcaption span:not(.ph-tag){color:var(--sand)}
 
 /* ============================================================
    RESERVAR
