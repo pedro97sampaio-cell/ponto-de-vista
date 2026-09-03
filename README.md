@@ -22,7 +22,7 @@ sites de referência do género (KT Merry, entre outros), não inventado.
 |---|---|---|
 | `--ground` | `#2b2a28` | carvão quente — o chão da página. Preto puro endurece a fotografia. |
 | `--paper` | `#f3f1ec` | tinta sobre escuro **e** a inversão única (Serviços) |
-| `--sand` | `#c9b79c` | único tom quente, a conta-gotas: `0 m`/`120 m`, itálicos de ênfase, foco |
+| `--sand` | `#c9b79c` | único tom quente, a conta-gotas: itálicos de ênfase, rótulo `antes`, foco |
 
 - **Cormorant Garamond 300** (display) + **Jost 300/400** (caps utilitárias e corpo). Duas famílias.
 - Caps a 12px com `letter-spacing` de 0.18–0.20em para tudo o que é utilitário.
@@ -38,13 +38,13 @@ display a 80–120px (não 200), e muito mais ar do que instinto nos diz.
 
 ### As decisões que importam
 
-1. **O herói.** Fotografia à esquerda, painel escuro à direita com o lettering — a estrutura
-   da referência. A cadência vem da alternância entre romana em caixa-alta e itálico: as linhas
-   em itálico são menores, recuadas e em areia. Em mobile empilha (foto 50svh, painel por baixo).
-2. **A troca de ponto de vista.** As peças marcadas `120 m` fazem crossfade para a aérea do mesmo
-   momento no hover (`.fr__air`, CSS puro). Silenciosa: sem caixa, sem badge, sem timecode.
-3. **Números que são informação.** `0 m` / `120 m`, não `01 / 02`. Nos Serviços não há numeração —
-   não é uma sequência.
+1. **O herói é uma fotografia.** Full-bleed, tipo mínima em baixo à esquerda. O argumento não é
+   o equipamento — é a antecipação: «Sabemos o que vem a seguir.» O portefólio vem logo a seguir,
+   antes de qualquer texto sobre nós: mostrar antes de dizer.
+2. **O instante antes.** As peças marcadas `antes` fazem crossfade, no hover, para o enquadramento
+   que veio primeiro (`.fr__air`, CSS puro). Não é um efeito: é a prova de que já lá estavam.
+   Silenciosa — sem caixa, sem badge, sem timecode.
+3. **Sem numeração decorativa.** Nos Serviços e nos passos não há `01 / 02 / 03` — não são sequências.
 4. **Centrado e com ar.** Cabeçalhos de secção ao centro, medidas curtas, bandas altas.
 5. **Subtração.** Foram cortados: a fita técnica, os quatro rótulos de secção, a barra do herói,
    as linhas de especificações, o botão da dupla, a pista sobre o hover, os links do rodapé,
@@ -88,10 +88,11 @@ confirmar ou corrigir cada linha:
 - Nome da marca "Ponto de Vista" e domínio `pontodevista.pt`.
 - `hello@pontodevista.pt` e `+351 900 000 000` — ambos inventados.
 - "Porto — em todo o país" como base de operação.
-- **"Drone certificado"** e **"a cento e vinte metros"** — em Portugal a operação de drones é
-  regulada pela ANAC ao abrigo do Regulamento de Execução (UE) 2019/947. O limite geral de altura
-  na categoria aberta é 120 m acima da superfície, e o operador tem de estar registado. A frase só
-  se pode manter se o registo existir mesmo; caso contrário é uma afirmação falsa sobre licença.
+- **Planos aéreos** aparecem uma vez, em Serviços/Casamentos, como capacidade condicional
+  («quando o sítio e a meteorologia os justificam»). Não há afirmação de certificação — a versão
+  anterior dizia "drone certificado", o que em Portugal implica registo do operador na ANAC ao
+  abrigo do Regulamento de Execução (UE) 2019/947. Se voltarem a afirmar licença, tem de ser
+  verdade e verificável.
 - Prazos e âmbitos em "O que levam para casa": "6 a 10 minutos", "cortes para redes em 24 h",
   "resposta em 24 h", "a partir de 12 h". São compromissos comerciais — confirmar todos.
 - Nomes dos trabalhos na grelha (Ana & Tiago, Marta & Rui, Quinta da Boeira, Alfândega…) e as

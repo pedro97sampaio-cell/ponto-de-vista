@@ -3,22 +3,22 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Ponto de Vista — fotografia e vídeo de casamentos, batizados e eventos</title>
-<meta name="description" content="Dois operadores, duas alturas, o mesmo instante. Fotografia e vídeo de casamentos, batizados, comunhões e eventos de empresa.">
-<meta name="theme-color" content="#0b0b0c">
+<title>Ponto de Vista — fotografia de casamentos, batizados e eventos</title>
+<meta name="description" content="Fotografia e vídeo de casamentos, batizados, comunhões e eventos de empresa. Chegamos cedo, não dirigimos ninguém, e sabemos o que vem a seguir.">
+<meta name="theme-color" content="#2b2a28">
 <!-- Protótipo com conteúdo por confirmar (ver README). Tirar quando o conteúdo for real. -->
 <meta name="robots" content="noindex, nofollow">
 
 <meta property="og:type" content="website">
-<meta property="og:title" content="Ponto de Vista — o mesmo instante, de duas alturas">
-<meta property="og:description" content="Câmara em terra, drone no ar. Casamentos, batizados, comunhões e eventos de empresa.">
+<meta property="og:title" content="Ponto de Vista — fotografia de casamentos e eventos">
+<meta property="og:description" content="Chegamos cedo, não dirigimos ninguém, e sabemos o que vem a seguir.">
 <meta property="og:image" content="https://images.unsplash.com/photo-1550784718-990c6de52adf?auto=format&fit=crop&w=1200&q=70">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preconnect" href="https://images.unsplash.com">
 <link rel="preload" as="image" fetchpriority="high"
-      href="https://images.unsplash.com/photo-1550784718-990c6de52adf?auto=format&fit=crop&w=1400&q=76">
+      href="https://images.unsplash.com/photo-1550784718-990c6de52adf?auto=format&fit=crop&w=2000&q=76">
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Jost:wght@300;400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -33,8 +33,8 @@
   </a>
 
   <nav class="nav__links" aria-label="Principal">
-    <a href="#dupla">A dupla</a>
     <a href="#trabalho">Trabalho</a>
+    <a href="#metodo">Como trabalhamos</a>
     <a href="#servicos">Serviços</a>
     <a href="#reservar" class="nav__cta">Reservar data</a>
   </nav>
@@ -45,8 +45,8 @@
 </header>
 
 <div class="menu" id="menu" hidden>
-  <a href="#dupla">A dupla</a>
   <a href="#trabalho">Trabalho</a>
+  <a href="#metodo">Como trabalhamos</a>
   <a href="#servicos">Serviços</a>
   <a href="#reservar">Reservar data</a>
   <p class="menu__foot">hello@pontodevista.pt<br>+351 900 000 000</p>
@@ -54,104 +54,51 @@
 
 <main id="top">
 
-<!-- ───────────────────── HERO — o mesmo instante, duas alturas ───────────────────── -->
+<!-- ───────────────────── HERO — a fotografia manda ───────────────────── -->
 <section class="hero" aria-labelledby="hero-title">
-  <figure class="hero__shot">
-    <video class="hero__media" autoplay muted loop playsinline preload="none"
-           poster="https://images.unsplash.com/photo-1550784718-990c6de52adf?auto=format&fit=crop&w=1400&q=76">
-      <source src="assets/media/reel.mp4" type="video/mp4">
-    </video>
-  </figure>
+  <video class="hero__media" autoplay muted loop playsinline preload="none"
+         poster="https://images.unsplash.com/photo-1550784718-990c6de52adf?auto=format&fit=crop&w=2000&q=76">
+    <source src="assets/media/reel.mp4" type="video/mp4">
+  </video>
+  <div class="hero__scrim"></div>
 
-  <div class="hero__panel">
-    <h1 id="hero-title">
-      <span class="up">O mesmo</span>
-      <em>instante</em>
-      <span class="up">duas</span>
-      <em>alturas</em>
-    </h1>
-    <p class="hero__sub">Fotografia e vídeo, câmara e drone.<br>Casamentos, batizados, comunhões e empresas.</p>
+  <div class="hero__body">
+    <h1 id="hero-title">Sabemos o que<br><em>vem a seguir.</em></h1>
+    <p class="hero__sub">Fotografia e vídeo de casamentos, batizados, comunhões e eventos de empresa.</p>
   </div>
+
+  <a class="hero__cue" href="#trabalho" aria-label="Ver o trabalho">Trabalho<i></i></a>
 </section>
 
-<!-- ───────────────────── A DUPLA ───────────────────── -->
-<section class="duo" id="dupla" aria-labelledby="duo-title">
-  <header class="duo__head">
-    <h2 class="dsp" id="duo-title" data-reveal>Nunca vamos<br><em>sozinhos.</em></h2>
-    <p class="lede" data-reveal>
-      Não vendemos um terceiro operador que vocês não conhecem. Quem vos atende é quem vai
-      lá estar — um em terra, outro no ar, a falar um com o outro o dia inteiro.
-    </p>
-  </header>
-
-  <div class="duo__grid">
-    <figure class="op" data-reveal>
-      <span class="op__alt">0 m</span>
-      <div class="fr fr--45">
-        <img src="https://images.unsplash.com/photo-1587050265310-1a2d98ccce5f?auto=format&fit=crop&w=900&q=74"
-             sizes="(max-width:900px) 92vw, 40vw"
-             alt="Operador de câmara a filmar ao nível dos olhos" loading="lazy" decoding="async" width="900" height="1125">
-      </div>
-      <figcaption>
-        <h3>Ao nível dos olhos</h3>
-        <p>Os nervos antes de entrar, a mão do pai no ombro, o riso que ninguém pediu.
-           É aqui que a história acontece.</p>
-      </figcaption>
-    </figure>
-
-    <figure class="op op--low" data-reveal>
-      <span class="op__alt">120 m</span>
-      <div class="fr fr--45">
-        <img src="https://images.unsplash.com/photo-1767194316751-dce698b5e224?auto=format&fit=crop&w=900&q=74"
-             sizes="(max-width:900px) 92vw, 40vw"
-             alt="Piloto a lançar o drone num campo ao fim da tarde" loading="lazy" decoding="async" width="900" height="1125">
-      </div>
-      <figcaption>
-        <h3>Cento e vinte metros acima</h3>
-        <p>O plano que só existe de cima. A quinta inteira, a chegada dos carros,
-           o círculo à volta do primeiro beijo. Uma vez. Sem repetições.</p>
-      </figcaption>
-    </figure>
-  </div>
-</section>
-
-<!-- ───────────────────── TRABALHO ───────────────────── -->
+<!-- ───────────────────── TRABALHO — primeiro, e grande ───────────────────── -->
 <section class="work" id="trabalho" aria-labelledby="work-title">
   <header class="work__head">
     <h2 class="dsp" id="work-title" data-reveal>Alguns dias<br><em>que ficaram assim.</em></h2>
   </header>
 
   <div class="work__bar" data-reveal>
-      <div class="filters" role="group" aria-label="Filtrar por tipo de evento">
-        <button class="filter is-on" data-filter="todos" aria-pressed="true">Todos</button>
-        <button class="filter" data-filter="casamentos" aria-pressed="false">Casamentos</button>
-        <button class="filter" data-filter="batizados" aria-pressed="false">Batizados &amp; Comunhões</button>
-        <button class="filter" data-filter="empresas" aria-pressed="false">Empresas</button>
-      </div>
+    <p class="hint">Nas peças marcadas <b>antes</b>, o rato mostra o instante que veio primeiro.</p>
+    <div class="filters" role="group" aria-label="Filtrar por tipo de evento">
+      <button class="filter is-on" data-filter="todos" aria-pressed="true">Todos</button>
+      <button class="filter" data-filter="casamentos" aria-pressed="false">Casamentos</button>
+      <button class="filter" data-filter="batizados" aria-pressed="false">Batizados &amp; Comunhões</button>
+      <button class="filter" data-filter="empresas" aria-pressed="false">Empresas</button>
+    </div>
   </div>
 
   <div class="grid" id="grid">
 
-    <figure class="tile tile--w6 tile--r32" data-cat="casamentos" data-video="ana-tiago">
+    <figure class="tile tile--w7 tile--r32" data-cat="casamentos" data-video="ana-tiago">
       <div class="fr">
-        <img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1200&q=74"
+        <img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1400&q=74"
              sizes="(max-width:900px) 92vw, 55vw"
-             alt="Noivo e noiva com o ramo ao fim da tarde" loading="lazy" decoding="async" width="1200" height="675">
-        <img class="fr__air" src="https://images.unsplash.com/photo-1777573087859-ca2740930bb0?auto=format&fit=crop&w=1200&q=74"
-             alt="" aria-hidden="true" loading="lazy" decoding="async" width="1200" height="675">
+             alt="Noivo e noiva com o ramo ao fim da tarde" loading="lazy" decoding="async" width="1400" height="933">
+        <img class="fr__air" src="https://images.unsplash.com/photo-1596457221755-b96bc3a6df18?auto=format&fit=crop&w=1400&q=74"
+             alt="" aria-hidden="true" loading="lazy" decoding="async" width="1400" height="933">
         <span class="play" aria-hidden="true"></span>
-        <span class="alt">120 m</span>
+        <span class="alt">antes</span>
       </div>
       <figcaption><span class="t">Ana &amp; Tiago</span><span class="m">Quinta da Boeira, Gaia — filme, 2:14</span></figcaption>
-    </figure>
-
-    <figure class="tile tile--w6 tile--r32" data-cat="casamentos">
-      <div class="fr">
-        <img src="https://images.unsplash.com/photo-1777573087931-5c6e8a69e6e4?auto=format&fit=crop&w=1200&q=74"
-             sizes="(max-width:900px) 92vw, 38vw"
-             alt="A quinta e o vale ao fim da tarde, vistos do ar" loading="lazy" decoding="async" width="900" height="1125">
-      </div>
-      <figcaption><span class="t">A última luz</span><span class="m">Aérea — Douro</span></figcaption>
     </figure>
 
     <figure class="tile tile--w5 tile--r45" data-cat="casamentos">
@@ -159,65 +106,77 @@
         <img src="https://images.unsplash.com/photo-1591604466107-ec97de577aff?auto=format&fit=crop&w=900&q=74"
              sizes="(max-width:900px) 92vw, 38vw"
              alt="Noivos de mãos dadas em contraluz" loading="lazy" decoding="async" width="900" height="1125">
-        <img class="fr__air" src="https://images.unsplash.com/photo-1777573087891-a4e9e4dff717?auto=format&fit=crop&w=900&q=74"
-             alt="" aria-hidden="true" loading="lazy" decoding="async" width="900" height="1125">
-        <span class="alt">120 m</span>
       </div>
       <figcaption><span class="t">Antes de entrar</span><span class="m">Retrato — Douro</span></figcaption>
     </figure>
 
+    <figure class="tile tile--w5 tile--r45" data-cat="casamentos">
+      <div class="fr">
+        <img src="https://images.unsplash.com/photo-1550784718-990c6de52adf?auto=format&fit=crop&w=900&q=74"
+             sizes="(max-width:900px) 92vw, 38vw"
+             alt="Noivos junto ao muro de um palácio, ao outono" loading="lazy" decoding="async" width="900" height="1125">
+      </div>
+      <figcaption><span class="t">A última luz</span><span class="m">Casamento — Douro</span></figcaption>
+    </figure>
+
     <figure class="tile tile--w7 tile--r32" data-cat="casamentos">
       <div class="fr">
-        <img src="https://images.unsplash.com/photo-1606216794074-735e91aa2c92?auto=format&fit=crop&w=1200&q=74"
+        <img src="https://images.unsplash.com/photo-1606216794074-735e91aa2c92?auto=format&fit=crop&w=1400&q=74"
              sizes="(max-width:900px) 92vw, 55vw"
-             alt="Recém-casados a atravessar um campo" loading="lazy" decoding="async" width="1200" height="800">
+             alt="Recém-casados a atravessar um campo" loading="lazy" decoding="async" width="1400" height="933">
+        <img class="fr__air" src="https://images.unsplash.com/photo-1563808599481-34a342e44508?auto=format&fit=crop&w=1400&q=74"
+             alt="" aria-hidden="true" loading="lazy" decoding="async" width="1400" height="933">
+        <span class="alt">antes</span>
       </div>
       <figcaption><span class="t">Marta &amp; Rui</span><span class="m">Alentejo — reportagem</span></figcaption>
     </figure>
 
     <figure class="tile tile--w8 tile--r219" data-cat="casamentos" data-video="quinta">
       <div class="fr">
-        <img src="https://images.unsplash.com/photo-1758612120966-b20c01160c7b?auto=format&fit=crop&w=1400&q=74"
+        <img src="https://images.unsplash.com/photo-1758612120966-b20c01160c7b?auto=format&fit=crop&w=1600&q=74"
              sizes="(max-width:900px) 92vw, 64vw"
-             alt="Vista aérea de uma quinta histórica com jardins" loading="lazy" decoding="async" width="1400" height="600">
+             alt="A quinta e os jardins ao fim da tarde" loading="lazy" decoding="async" width="1600" height="686">
         <span class="play" aria-hidden="true"></span>
       </div>
-      <figcaption><span class="t">A quinta, vista de cima</span><span class="m">Abertura de filme, drone — 1:08</span></figcaption>
+      <figcaption><span class="t">A quinta, antes de abrir</span><span class="m">Abertura de filme — 1:08</span></figcaption>
     </figure>
 
-    <figure class="tile tile--w5 tile--r45" data-cat="batizados">
+    <figure class="tile tile--w4 tile--r11" data-cat="batizados">
       <div class="fr">
         <img src="https://images.unsplash.com/photo-1566516171511-1c411a59c8ba?auto=format&fit=crop&w=900&q=74"
-             sizes="(max-width:900px) 92vw, 38vw"
-             alt="Batizado de uma criança na pia batismal" loading="lazy" decoding="async" width="900" height="1125">
+             sizes="(max-width:900px) 92vw, 30vw"
+             alt="Batizado de uma criança na pia batismal" loading="lazy" decoding="async" width="900" height="900">
       </div>
       <figcaption><span class="t">Batizado do Salvador</span><span class="m">Igreja de São Nicolau</span></figcaption>
     </figure>
 
-    <figure class="tile tile--w7 tile--r32" data-cat="batizados">
+    <figure class="tile tile--w8 tile--r32" data-cat="batizados">
       <div class="fr">
-        <img src="https://images.unsplash.com/photo-1592346687232-aef0835b0a1e?auto=format&fit=crop&w=1200&q=74"
-             sizes="(max-width:900px) 92vw, 55vw"
-             alt="Homem de camisa branca a segurar um bebé ao colo" loading="lazy" decoding="async" width="1200" height="800">
+        <img src="https://images.unsplash.com/photo-1592346687232-aef0835b0a1e?auto=format&fit=crop&w=1400&q=74"
+             sizes="(max-width:900px) 92vw, 64vw"
+             alt="Homem de camisa branca a segurar um bebé ao colo" loading="lazy" decoding="async" width="1400" height="933">
+        <img class="fr__air" src="https://images.unsplash.com/photo-1731743214989-9b4d60937ddf?auto=format&fit=crop&w=1400&q=74"
+             alt="" aria-hidden="true" loading="lazy" decoding="async" width="1400" height="933">
+        <span class="alt">antes</span>
       </div>
       <figcaption><span class="t">Nas mãos da família</span><span class="m">Reportagem de batizado</span></figcaption>
     </figure>
 
-    <figure class="tile tile--w8 tile--r169" data-cat="batizados" data-video="comunhao">
+    <figure class="tile tile--w6 tile--r169" data-cat="batizados" data-video="comunhao">
       <div class="fr">
         <img src="https://images.unsplash.com/photo-1614112545243-d8e391a54764?auto=format&fit=crop&w=1400&q=74"
-             sizes="(max-width:900px) 92vw, 64vw"
+             sizes="(max-width:900px) 92vw, 46vw"
              alt="Interior de igreja com lustre de vidro e luz alta" loading="lazy" decoding="async" width="1400" height="787">
         <span class="play" aria-hidden="true"></span>
       </div>
       <figcaption><span class="t">Primeira comunhão</span><span class="m">Filme curto, Braga — 1:32</span></figcaption>
     </figure>
 
-    <figure class="tile tile--w7 tile--r169" data-cat="empresas" data-video="conferencia">
+    <figure class="tile tile--w6 tile--r169" data-cat="empresas" data-video="conferencia">
       <div class="fr">
-        <img src="https://images.unsplash.com/photo-1762968274962-20c12e6e8ecd?auto=format&fit=crop&w=1200&q=74"
-             sizes="(max-width:900px) 92vw, 55vw"
-             alt="Orador em palco perante uma plateia" loading="lazy" decoding="async" width="1200" height="675">
+        <img src="https://images.unsplash.com/photo-1762968274962-20c12e6e8ecd?auto=format&fit=crop&w=1400&q=74"
+             sizes="(max-width:900px) 92vw, 46vw"
+             alt="Orador em palco perante uma plateia" loading="lazy" decoding="async" width="1400" height="787">
         <span class="play" aria-hidden="true"></span>
       </div>
       <figcaption><span class="t">Conferência anual</span><span class="m">Aftermovie, 900 pessoas — 2:40</span></figcaption>
@@ -232,18 +191,67 @@
       <figcaption><span class="t">Vinte minutos antes</span><span class="m">Sala vazia — Alfândega</span></figcaption>
     </figure>
 
-    <figure class="tile tile--w6 tile--r32" data-cat="empresas">
+    <figure class="tile tile--w7 tile--r32" data-cat="empresas">
       <div class="fr">
-        <img src="https://images.unsplash.com/photo-1758507595623-811a2ea5cb7b?auto=format&fit=crop&w=1200&q=74"
-             sizes="(max-width:900px) 92vw, 46vw"
-             alt="Orador no púlpito com o vídeo projetado atrás" loading="lazy" decoding="async" width="1200" height="800">
-        <img class="fr__air" src="https://images.unsplash.com/photo-1589730488465-ab3b839296fd?auto=format&fit=crop&w=1200&q=74"
-             alt="" aria-hidden="true" loading="lazy" decoding="async" width="1200" height="800">
-        <span class="alt">120 m</span>
+        <img src="https://images.unsplash.com/photo-1758507595623-811a2ea5cb7b?auto=format&fit=crop&w=1400&q=74"
+             sizes="(max-width:900px) 92vw, 55vw"
+             alt="Orador no púlpito com o vídeo projetado atrás" loading="lazy" decoding="async" width="1400" height="933">
       </div>
       <figcaption><span class="t">Keynote</span><span class="m">Multi-câmara + streaming</span></figcaption>
     </figure>
 
+  </div>
+</section>
+
+<!-- ───────────────────── COMO TRABALHAMOS — o argumento ───────────────────── -->
+<section class="how" id="metodo" aria-labelledby="how-title">
+  <header class="how__head">
+    <h2 class="dsp" id="how-title" data-reveal>Uma boa fotografia<br><em>começa antes do momento.</em></h2>
+    <p class="lede" data-reveal>
+      A câmara é a parte fácil — hoje toda a gente tem uma. O que distingue um dia bem
+      fotografado é quem está a segurá-la, o que essa pessoa já viu antes e onde decide pôr-se.
+    </p>
+  </header>
+
+  <div class="how__grid">
+    <figure class="step" data-reveal>
+      <div class="fr fr--45">
+        <img src="https://images.unsplash.com/photo-1559223669-d7bb31d71f26?auto=format&fit=crop&w=900&q=74"
+             sizes="(max-width:900px) 92vw, 30vw"
+             alt="Sala de cerimónia ainda vazia, antes dos convidados" loading="lazy" decoding="async" width="900" height="1125">
+      </div>
+      <figcaption>
+        <h3>Chegamos cedo</h3>
+        <p>Andamos pelo espaço antes de haver gente lá dentro. Vemos por onde entra a luz
+           àquela hora, onde ela vai estar daí a três horas, e onde é que não vale a pena estar.</p>
+      </figcaption>
+    </figure>
+
+    <figure class="step" data-reveal>
+      <div class="fr fr--45">
+        <img src="https://images.unsplash.com/photo-1592346687232-aef0835b0a1e?auto=format&fit=crop&w=900&q=74"
+             sizes="(max-width:900px) 92vw, 30vw"
+             alt="Momento de família registado sem interrupção" loading="lazy" decoding="async" width="900" height="1125">
+      </div>
+      <figcaption>
+        <h3>Não dirigimos ninguém</h3>
+        <p>Não há «olhem para aqui», não há repetir o corte do bolo. O dia é vosso e corre
+           como tem de correr. Nós movemo-nos à volta dele sem o interromper.</p>
+      </figcaption>
+    </figure>
+
+    <figure class="step" data-reveal>
+      <div class="fr fr--45">
+        <img src="https://images.unsplash.com/photo-1587050265310-1a2d98ccce5f?auto=format&fit=crop&w=900&q=74"
+             sizes="(max-width:900px) 92vw, 30vw"
+             alt="Operador atento, já em posição" loading="lazy" decoding="async" width="900" height="1125">
+      </div>
+      <figcaption>
+        <h3>Conhecemos o guião</h3>
+        <p>Sabemos quando a mãe vai chorar, de que lado o padrinho se vai virar e quanto tempo
+           dura a bênção. Quando acontece, já lá estamos — e é por isso que a fotografia existe.</p>
+      </figcaption>
+    </figure>
   </div>
 </section>
 
@@ -257,8 +265,9 @@
   <div class="svc__rows">
     <article class="svc__row" data-reveal>
       <h3>Casamentos</h3>
-      <p>Cobertura dos dois desde os preparativos até ao fim da festa. Filme de 6 a 10 minutos,
-         teaser vertical para o dia seguinte e a galeria completa em alta resolução.</p>
+      <p>Cobertura desde os preparativos até ao fim da festa. Filme de 6 a 10 minutos, teaser
+         vertical para o dia seguinte e a galeria completa em alta resolução. Planos aéreos
+         quando o sítio e a meteorologia os justificam.</p>
       <span class="svc__t">12 h +</span>
     </article>
 
@@ -271,8 +280,8 @@
 
     <article class="svc__row" data-reveal>
       <h3>Empresas</h3>
-      <p>Aftermovie, entrevistas, cobertura de palco e planos aéreos do recinto.
-         Entrega faseada: cortes para redes em 24 h, filme final depois.</p>
+      <p>Aftermovie, entrevistas, cobertura de palco e retratos de equipa. Entrega faseada:
+         cortes para redes em 24 h, filme final depois.</p>
       <span class="svc__t">Sob medida</span>
     </article>
   </div>
@@ -288,8 +297,8 @@
     </figure>
 
     <figure data-reveal>
-      <blockquote>O plano de cima, à saída da igreja, é a coisa que a minha mãe mostra a toda a
-        gente. Nem demos conta de que estava a ser filmado.</blockquote>
+      <blockquote>Estavam sempre no sítio certo antes de a coisa acontecer. Nunca nos pediram
+        para repetir nada, e mesmo assim têm tudo.</blockquote>
       <figcaption>Batizado<span>Maio · Braga</span></figcaption>
     </figure>
 
@@ -307,7 +316,7 @@
     <h2 class="dsp" id="book-title" data-reveal>Digam-nos o dia.<br><em>Respondemos hoje.</em></h2>
     <p class="lede" data-reveal>
       Uma data, um sítio e o que vos passa pela cabeça. Devolvemos disponibilidade,
-      preço fechado e dois ou três filmes parecidos com o que estão a imaginar.
+      preço fechado e dois ou três trabalhos parecidos com o que estão a imaginar.
     </p>
     <ul class="direct" data-reveal>
       <li><a href="mailto:hello@pontodevista.pt">hello@pontodevista.pt</a></li>
